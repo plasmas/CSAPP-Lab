@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Performance Lab Release Notes</title>
+  </head>
+
+  <body bgcolor=white>
+    <h1>Performance Lab Release Notes</h1>
+
+<table width=700><tr><td>
+
+<h2>9/2/2014</h2>
+<ul>
+<li> Fixed bug in Makefile and the <kbd>grade-perflab.pl</kbd>
+autograder that relied on <kbd>bash</kbd> syntax that is incompatible
+with <kbd>sh</kbd>.
+<i>Thanks to Prof. Hugh Lauer, Worcester Polytechnic Institute</i>
+</ul>
+
+<h2>9/7/2011</h2>
+<ul>
+<li> Updated the Makefile to use the <kbd>gcc -m32</kbd> flag
+so that the code will run on either 32-bit or 64-bit systems. 
+</ul>
+
+<h2>6/26/2003</h2>
+<ul>
+<li> Fixed a bug in the <kbd>grade-perflab.pl</kbd> 
+autograder. The autograder was failing because it tried
+to call two scoring functions defined in the 
+<kbd>config.pm</kbd> module. Somehow I had accidently 
+deleted the '<kbd>use config</kbd>' statement that 
+included this module.
+</ul>
+
+<h2>6/3/2002</h2>
+<ul>
+<li> Initial release.
+</ul>
+
+
+</td></tr></table>
+</body>
+</html>

@@ -1,0 +1,86 @@
+ <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>ArchLab Release Notes</title>
+  </head>
+
+  <body bgcolor=white>
+    <h1>ArchLab Release Notes</h1>
+
+<table width=700><tr><td>
+
+<h2>10/19/2016</h2>
+<ul>
+<li> Fixed a bug in pipe/correctness.pl that allowed programs that are too long to get full credit. 
+<i>Thanks to Jenna MacCarly, Carnegie Mellon</i>
+</ul>
+
+<h2>4/1/2015</h2>
+<b>This is a major update of the Arch Lab that reflects the changes in Chapter 4 of CS:APP3e.</b>
+<ul>
+<li> Updated all tools and programs from Y86 (32-bit) to Y86-64 (64-bit).
+</ul>
+
+<h2>7/29/2013</h2>
+<ul>
+<li> Updated autograders to compute and summarize all autograded scores
+on the gradesheets.
+
+<li> Fixed some typos in the writeup and the slides.
+
+<li> In the writeup, updated references to problem numbers for <kbd>iaddl</kbd>
+and <kbd>leave</kbd> to include the corresponding problem numbers for the
+international version.
+</ul>
+
+<h2>5/1/2011</h2> 
+<b>This is a major update of the Arch Lab that reflects the changes in Chapter 4 of CS:APP2e.</b>
+
+<ul> 
+<li> Students can now use the conditional move instructions to avoid
+the performance problems of conditional jumps.
+
+<li> The benchmark test has a random selection of positive
+vs. negative numbers.  So, conditional moves are really the way to go.
+
+<li> The correctness check is more robust, looking for things like overshooting the array bounds.
+
+<li> Added a 1000-byte limit on the size of the object code for the ncopy function.
+
+<li> Added Perl scripts in <kbd>src/ptest</kbd> that provide comprehensive
+regression testing of the different Y86 simulators:
+<ul>
+<li>Tests each individual instruction type.
+<li>Tests all of the jump types under different conditions.
+<li>Tests different pipeline control combinations.
+<li>Tests many different hazard possibilities.
+</ul>
+
+<li> Incorporated the regresssion tests in <kbd>src/ptest</kbd> into the autograding
+of the student solutions for parts B and C.
+</ul>
+
+<h2>11/04/2004</h2>
+<ul>
+<li> Fixed problem that caused some newer Linux distributions to
+get tk.h from /usr/local/include instead of /usr/include.
+<i>Thanks to Prof. Dr. Gerd Doeben-Henisch, Fachhochschule Frankfurt.</i>
+</ul>
+
+<h2>12/22/2003</h2>
+<ul>
+<li> Fixed minor bug that caused some compilers to complain.
+Changed type of return value from <kbd>getopt()</kbd> from <kbd>char</kbd> 
+to <kbd>int</kbd>.
+<i>Thanks to Morgan Harvey, Portland State University.</i>
+</ul>
+
+<h2>8/5/2002</h2>
+<ul>
+<li> Initial release.
+</ul>
+
+
+</td></tr></table>
+</body>
+</html>
